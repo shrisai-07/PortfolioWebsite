@@ -72,7 +72,7 @@ const StatCounter = ({ end, label }) => {
 };
 
 const Hero = () => {
-  const titleWords = ["CYBERSECURITY", "ENTHUSIAST"];
+  const titleWords = ["CYBERSECURITY", "ANALYST"];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -120,7 +120,7 @@ const Hero = () => {
         <motion.div variants={wordVariants} className="max-w-xl">
           <p className="text-[16px] text-secondary leading-[1.7]">
             Hi! I'm <span className="text-white font-medium">Shrisai Kolkondi</span>. 
-            A cybersecurity enthusiast focused on building secure systems, authentication mechanisms, and threat detection tools.
+            An aspiring cybersecurity analyst with hands-on SOC experience in security monitoring, alert triage, and incident handling. Familiar with Splunk and Microsoft Sentinel.
           </p>
         </motion.div>
 
@@ -134,14 +134,14 @@ const Hero = () => {
             </a>
           </MagneticButton>
           <span className="text-[11px] uppercase tracking-[0.15em] text-muted font-bold">
-            Open to cybersecurity roles & collaborations
+            Open to SOC & cybersecurity analyst roles
           </span>
         </motion.div>
 
         <motion.div variants={wordVariants} className="flex flex-wrap gap-12 md:gap-24 mt-12">
           <StatCounter end={3} label="Security Projects" />
+          <StatCounter end={7} label="Certifications" />
           <StatCounter end={2} label="Years Learning" />
-          <StatCounter end={4} label="GitHub Repos" />
         </motion.div>
       </motion.div>
     </section>

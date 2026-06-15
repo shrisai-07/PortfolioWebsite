@@ -3,43 +3,38 @@ export const techStack = [
     category: "Languages",
     items: [
       { name: "Python", icon: "python" },
-      { name: "TypeScript", icon: "typescript" },
-      { name: "JavaScript", icon: "javascript" },
-      { name: "HTML", icon: "html5" },
-      { name: "CSS", icon: "css3" },
-      { name: "Shell", icon: "bash" }
+      { name: "C", icon: "c" },
+      { name: "C++", icon: "cplusplus" },
+      { name: "Java", icon: "java" },
+      { name: "TypeScript", icon: "typescript" }
     ]
   },
   {
-    category: "Frontend",
+    category: "SIEM & Security Tools",
     items: [
-      { name: "React", icon: "react" },
-      { name: "Vite", icon: "vite" },
-      { name: "Tailwind CSS", icon: "tailwindcss" }
+      { name: "Splunk", icon: "null" },
+      { name: "Microsoft Sentinel", icon: "null" },
+      { name: "Wireshark", icon: "null" },
+      { name: "TryHackMe", icon: "null" }
     ]
   },
   {
-    category: "Backend",
+    category: "OS & Cloud",
     items: [
-      { name: "Flask", icon: "flask" },
-      { name: "Node.js", icon: "nodejs" }
+      { name: "Windows", icon: "windows8" },
+      { name: "Linux", icon: "linux" },
+      { name: "Azure Fundamentals", icon: "azure" }
     ]
   },
   {
-    category: "Security & Crypto",
+    category: "Security Concepts",
     items: [
-      { name: "bcrypt", icon: "null" }, // Use placeholder if icon not in devicon
-      { name: "Fernet", icon: "null" },
-      { name: "JWT", icon: "null" }
-    ]
-  },
-  {
-    category: "Tools",
-    items: [
-      { name: "Git", icon: "git" },
-      { name: "GitHub", icon: "github" },
-      { name: "VS Code", icon: "vscode" },
-      { name: "Linux", icon: "linux" }
+      { name: "Zero Trust", icon: "null" },
+      { name: "IAM", icon: "null" },
+      { name: "SOC Operations", icon: "null" },
+      { name: "Incident Response", icon: "null" },
+      { name: "Alert Triage", icon: "null" },
+      { name: "Applied Cryptography", icon: "null" }
     ]
   }
 ];

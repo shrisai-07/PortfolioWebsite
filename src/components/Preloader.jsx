@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 const Preloader = ({ onLoadingComplete }) => {
   const [index, setIndex] = useState(0);
-  const words = ["DEVELOPER", "DESIGNER", "SHRISAI"];
+  const words = ["DEVELOPER", "ANALYST", "SHRISAI"];
 
   useEffect(() => {
     if (index === words.length - 1) {

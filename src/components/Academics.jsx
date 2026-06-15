@@ -38,6 +38,9 @@ const Academics = () => {
                   <p className="text-secondary font-medium text-[16px] leading-snug">
                     {edu.degree}
                   </p>
+                  {edu.cgpa && (
+                    <span className="text-[13px] text-white/50 font-bold tracking-widest uppercase">{edu.cgpa}</span>
+                  )}
                 </div>
 
                 <div className="flex flex-wrap gap-6 pt-2">
