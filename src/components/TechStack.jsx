@@ -1,5 +1,44 @@
 import { motion } from 'framer-motion';
 import { techStack } from '../data/techstack';
+import * as Lucide from 'lucide-react';
+
+const TechIcon = ({ tech }) => {
+  if (tech.iconType === 'lucide') {
+    const IconComponent = Lucide[tech.icon];
+    if (IconComponent) {
+      return (
+        <IconComponent
+          className="w-8 h-8 text-muted group-hover:text-primary transition-colors duration-300"
+          strokeWidth={1.5}
+        />
+      );
+    }
+  }
+
+  if (tech.iconType === 'simpleicon') {
+    return (
+      <img
+        src={`https://cdn.simpleicons.org/${tech.icon}`}
+        alt={tech.name}
+        className="w-8 h-8 filter grayscale group-hover:grayscale-0 transition-all duration-300"
+      />
+    );
+  }
+
+  if (tech.iconType === 'devicon' && tech.icon !== 'null') {
+    return (
+      <img
+        src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.icon}/${tech.icon}-original.svg`}
+        alt={tech.name}
+        className="w-8 h-8 filter grayscale group-hover:grayscale-0 transition-all duration-300"
+      />
+    );
+  }
+
+  return (
+    <div className="w-8 h-8 bg-muted/20 rounded-full group-hover:bg-primary/10 transition-colors" />
+  );
+};
 
 const TechStack = () => {
   return (
@@ -30,15 +69,7 @@ const TechStack = () => {
                     }}
                     className="flex items-center gap-[10px] px-[18px] py-[10px] bg-accent border border-border rounded-[6px] transition-all duration-200 group cursor-default"
                   >
-                    {tech.icon !== 'null' ? (
-                      <img
-                        src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.icon}/${tech.icon}-original.svg`}
-                        alt={tech.name}
-                        className="w-8 h-8 filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                      />
-                    ) : (
-                      <div className="w-8 h-8 bg-muted/20 rounded-full group-hover:bg-primary/10 transition-colors" />
-                    )}
+                    <TechIcon tech={tech} />
                     <span className="text-[13px] font-medium text-white group-hover:text-primary transition-colors">
                       {tech.name}
                     </span>

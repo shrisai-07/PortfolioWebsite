@@ -139,7 +139,7 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="Collaboration Inquiry"
+                    placeholder="Project Idea"
                     className="bg-transparent border-b border-border-muted py-3 focus:border-white outline-none transition-colors text-white placeholder:text-white/5"
                   />
                 </div>
