@@ -18,8 +18,8 @@ const About = () => {
 
         <div className="max-w-3xl flex flex-col gap-10 text-secondary text-[16px] leading-[1.7]">
           <p>
-            Hi, I'm Shrisai Kolkondi — an aspiring cybersecurity analyst with hands-on experience in SOC operations, 
-            security monitoring, alert triage, and incident handling through my internship at Steel Authority of India Limited (SAIL).
+            Hi, I'm Shrisai Kolkondi an aspiring cybersecurity analyst with hands-on experience in SOC operations, 
+            security monitoring, alert triage, and incident handling.
           </p>
           <p>
             My focus areas include Identity & Access Management, applied cryptography, SIEM platforms (Splunk & Microsoft Sentinel), 
